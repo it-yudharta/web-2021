@@ -9,3 +9,16 @@
 
 ## Menjalankan Aplikasi
 - jalankan perintah `php artisan serve`, kemudian buka [link](http://localhost:8000) di browser:
+
+## Koneksi Database.
+- Buat Database Baru di MySQL dengan nama `web2021`.
+- setting pengaturan di `.env`, sesuaikan dengan database.
+- Jalankan Migrasi dengan menjalankan perintah `php artisan migrate`.
+
+### Membuat Controller, Model, factory dan seeder Database.
+- Jalankan `php artisan make:model -a NamaKalian`.
+- Ubah file migrasi yang berisi struktur data penduduk.
+
+## Menjalankan phpmyadmin dari terminal
+- masuk folder phpmyadmin.
+- jalankan perintah `php -S localhost:8888`, port `8888` bisa diubah sesuai kebutuhan.
