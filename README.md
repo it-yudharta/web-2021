@@ -14,6 +14,7 @@
 - Buat Database Baru di MySQL dengan nama `web2021`.
 - setting pengaturan di `.env`, sesuaikan dengan database.
 - Jalankan Migrasi dengan menjalankan perintah `php artisan migrate`.
+- untuk mereset seluruh database jalankan `php artisan migrate:fresh`.
 
 ### Membuat Controller, Model, factory dan seeder Database.
 - Jalankan `php artisan make:model -a NamaKalian`.

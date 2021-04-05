@@ -18,3 +18,5 @@ Route::get('/home', function () {
 Route::post('/home', function (Request $request) {
     return $request;
 });
+
+Route::get('/penduduk', 'CahyaController@index');

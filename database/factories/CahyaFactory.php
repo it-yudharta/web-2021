@@ -22,7 +22,10 @@ class CahyaFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'nip' => $this->faker->phoneNumber(),
+            'nama' => $this->faker->name,
+            'ttl' => $this->faker->city() . ', '.  $this->faker->date('d-m-Y'),
+            'alamat' => $this->faker->address(),
         ];
     }
 }

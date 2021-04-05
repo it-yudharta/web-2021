@@ -7,15 +7,16 @@ use Illuminate\Http\Request;
 
 class CahyaController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        //
+        // $penduduk = Cahya::all();
+        // $penduduk = Cahya::where('id', '<=', 10)->get();
+
+        $penduduk = Cahya::paginate();
+
+        return view('penduduk', ['penduduk' => $penduduk]);
     }
+
 
     /**
      * Show the form for creating a new resource.
